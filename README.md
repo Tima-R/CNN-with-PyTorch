@@ -7,15 +7,15 @@ A convolutional neural network (CNN) is a kind of neural network that extracts f
 This project is developed and tested in Google Colab, which provides an excellent platform for running machine learning experiments with access to GPUs and TPUs. Below are the details of the environment and dependencies used:
 
 - **Python Version**: Google Colab provides Python 3.7+
-- **PyTorch Version**: 1.11.0
-- **Torchvision Version**: 0.2.2
-- **Torchaudio Version**: 0.9.0
+- **PyTorch Version**: 2.3.1
+- **Torchvision Version**: 0.18.1
+- **Torchaudio Version**: 2.3.1
 
 ### Requirements
 
 To ensure compatibility and reproducibility, the following versions of PyTorch and its related libraries are used:
 
 ```sh
-torch==1.11.0
-torchvision==0.2.2
-torchaudio==0.9.0
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
