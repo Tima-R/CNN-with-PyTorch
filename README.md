@@ -299,7 +299,8 @@ for epoch in range(1, epochs + 1):
 ### View the loss history
 To track average training and validation loss for each epoch. To plot these to verify that loss reduced as the model was trained, and to detect over-fitting (which is indicated by a continued drop in training loss after validation loss has levelled out or started to increase).
 
-https://drive.google.com/file/d/1UVjBfmob3H2EWeIRFc9f7kFaNF-VqKAz/view?usp=sharing
+![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/7e7c1210-7352-4565-996f-97e2034d6dc7)
+
 
 
 
