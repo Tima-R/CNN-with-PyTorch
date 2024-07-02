@@ -44,8 +44,12 @@ import matplotlib.image as mpimg
 ### Uploading Local Folder to Google Colab:
 To upload a local folder to Google Colab, follow these steps:
 
-1- Download the zip file from Kaggle.
-2- Zip the folder on your local PC.
-3- Upload the zip file to Colab using files.upload().
-4- Unzip the file in Colab using zipfile.ZipFile
+Download the zip file from Kaggle.
+Zip the folder on your local PC.
+Upload the zip file to Colab using files.upload().
+Unzip the file in Colab using zipfile.ZipFile
 
+```
+import zipfile
+import os
+```
