@@ -15,14 +15,15 @@ This project is developed and tested in Google Colab, which provides an excellen
 
 To ensure compatibility and reproducibility, the following versions of PyTorch and its related libraries are used:
 
-```sh
+```
 torch==2.3.1
 torchvision==0.18.1
 torchaudio==2.3.1
+```
 
 ## Below are the libraries used:
 
-```sh
+```
 # Import PyTorch libraries
 import torch
 import torchvision
@@ -38,6 +39,7 @@ import os
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 %matplotlib inline
+```
 
 ### Uploading Local Folder to Google Colab:
 To upload a local folder to Google Colab, follow these steps:
