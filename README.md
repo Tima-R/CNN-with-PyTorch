@@ -302,13 +302,51 @@ To track average training and validation loss for each epoch. To plot these to v
 ![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/7e7c1210-7352-4565-996f-97e2034d6dc7)
 
 
+### Model Evaluation
+To evaluate the model's performance, the confusion matrix is used to visualize the accuracy of predictions on the test set. The following code demonstrates how to generate and plot the confusion matrix using SciKit-Learn:
 
+```
+# Pytorch doesn't have a built-in confusion matrix metric, so we'll use SciKit-Learn
+from sklearn.metrics import confusion_matrix
 
+# Set the model to evaluate mode
+model.eval()
 
+# Get predictions for the test data and convert to numpy arrays for use with SciKit-Learn
+print("Getting predictions from test set...")
+truelabels = []
+predictions = []
+for data, target in test_loader:
+    for label in target.cpu().data.numpy():
+        truelabels.append(label)
+    for prediction in model.cpu()(data).data.numpy().argmax(1):
+        predictions.append(prediction) 
 
+# Plot the confusion matrix
+cm = confusion_matrix(truelabels, predictions)
+plt.imshow(cm, interpolation="nearest", cmap=plt.cm.Blues)
+plt.colorbar()
+tick_marks = np.arange(len(classes))
+plt.xticks(tick_marks, classes, rotation=45)
+plt.yticks(tick_marks, classes)
+plt.xlabel("Predicted Shape")
+plt.ylabel("Actual Shape")
+plt.show()
 
+```
+![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/bac59839-6b19-42f9-95c8-5c2385ca84fc)
 
+### Saving the Trained Model
+After training the model, to save the model weights to a file for later use. The following code demonstrates how to save the trained model weights using PyTorch:
 
+```
+# Save the model weights
+model_file = 'models/shape_classifier.pt'
+torch.save(model.state_dict(), model_file)
+del model
+print('model saved as', model_file)
+
+```
 
 
 
