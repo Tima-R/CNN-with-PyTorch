@@ -53,3 +53,75 @@ Unzip the file in Colab using zipfile.ZipFile
 import zipfile
 import os
 ```
+
+### Data Exploration
+To understand the dataset better, I display the first image from each category. Below is an example image showing the first image from three different shape categories: Square, Triangle, and Circle.
+
+```
+# Show the first image in each folder
+fig = plt.figure(figsize=(8, 12))
+i = 0
+for sub_dir in os.listdir(data_path):
+    i += 1
+    img_file = os.listdir(os.path.join(data_path, sub_dir))[0]
+    img_path = os.path.join(data_path, sub_dir, img_file)
+    img = mpimg.imread(img_path)
+    a = fig.add_subplot(1, len(classes), i)
+    a.axis('off')
+    imgplot = plt.imshow(img)
+    a.set_title(img_file)
+plt.show()
+
+```
+This code iterates through each subdirectory in the dataset, reads the first image file, and displays it in a matplotlib figure, providing a quick visual overview of the dataset.
+
+![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/d31f8d82-562b-4682-8233-1b773aeac102)
+
+
+The images are labeled with their respective shapes and an identifier. This visualization helps us verify the contents and structure of the dataset, ensuring that the images are correctly categorized and loaded. Each subplot title shows the shape and its corresponding filename. This is useful for a quick visual inspection of the dataset.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
