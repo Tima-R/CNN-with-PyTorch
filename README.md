@@ -299,8 +299,7 @@ for epoch in range(1, epochs + 1):
 ### View the loss history
 To track average training and validation loss for each epoch. To plot these to verify that loss reduced as the model was trained, and to detect over-fitting (which is indicated by a continued drop in training loss after validation loss has levelled out or started to increase).
 
-C:\Users\Arike\Downloads\download.jfif
-
+https://drive.google.com/file/d/1UVjBfmob3H2EWeIRFc9f7kFaNF-VqKAz/view?usp=sharing
 
 
 
