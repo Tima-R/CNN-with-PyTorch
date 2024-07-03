@@ -301,7 +301,7 @@ To track average training and validation loss for each epoch. To plot these to v
 
 ![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/7e7c1210-7352-4565-996f-97e2034d6dc7)
 
-### The image shows a line plot of loss values over epochs for both training and validation data. The x-axis represents the number of epochs (ranging from 1 to 5), and the y-axis represents the loss. The plot has two lines: one for training loss (in blue) and one for validation loss (in orange). Both lines show a decreasing trend, indicating that the loss is reducing over the epochs, with the validation loss consistently lower than the training loss throughout the epochs. This suggests that the model is learning and improving its performance over time.
+The image shows a line plot of loss values over epochs for both training and validation data. The x-axis represents the number of epochs (ranging from 1 to 5), and the y-axis represents the loss. The plot has two lines: one for training loss (in blue) and one for validation loss (in orange). Both lines show a decreasing trend, indicating that the loss is reducing over the epochs, with the validation loss consistently lower than the training loss throughout the epochs. This suggests that the model is learning and improving its performance over time.
 
 
 ### Model Evaluation
@@ -339,6 +339,7 @@ plt.show()
 ![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/bac59839-6b19-42f9-95c8-5c2385ca84fc)
 
 
+The confusion matrix shows the performance of a shape classification model with actual shapes (circle, square, triangle) on the y-axis and predicted shapes on the x-axis. Darker cells indicate higher counts. The model predicts "circle" and "triangle" shapes accurately, with high counts on the diagonal for these categories. However, there is moderate misclassification for "squares," indicating some prediction errors.
 
 
 ### Saving the Trained Model
