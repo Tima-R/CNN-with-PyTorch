@@ -336,6 +336,9 @@ plt.show()
 ```
 ![image](https://github.com/Tima-R/CNN-with-PyTorch/assets/116596345/bac59839-6b19-42f9-95c8-5c2385ca84fc)
 
+
+The image shows a line plot of loss values over epochs for both training and validation data. The x-axis represents the number of epochs (ranging from 1 to 5), and the y-axis represents the loss. The plot has two lines: one for training loss (in blue) and one for validation loss (in orange). Both lines show a decreasing trend, indicating that the loss is reducing over the epochs, with the validation loss consistently lower than the training loss throughout the epochs. This suggests that the model is learning and improving its performance over time.
+
 ### Saving the Trained Model
 After training the model, to save the model weights to a file for later use. The following code demonstrates how to save the trained model weights using PyTorch:
 
